@@ -1,0 +1,83 @@
+C:\Users\TheNN\Desktop\Laptrinhhuongdoituong\Laptrinhhuongdoituong\bin\Debug\Laptrinhhuongdoituong.exe.config
+C:\Users\TheNN\Desktop\Laptrinhhuongdoituong\Laptrinhhuongdoituong\bin\Debug\Laptrinhhuongdoituong.exe
+C:\Users\TheNN\Desktop\Laptrinhhuongdoituong\Laptrinhhuongdoituong\bin\Debug\Laptrinhhuongdoituong.pdb
+C:\Users\TheNN\Desktop\Laptrinhhuongdoituong\Laptrinhhuongdoituong\bin\Debug\EntityFramework.dll
+C:\Users\TheNN\Desktop\Laptrinhhuongdoituong\Laptrinhhuongdoituong\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\TheNN\Desktop\Laptrinhhuongdoituong\Laptrinhhuongdoituong\bin\Debug\System.Data.SQLite.dll
+C:\Users\TheNN\Desktop\Laptrinhhuongdoituong\Laptrinhhuongdoituong\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\TheNN\Desktop\Laptrinhhuongdoituong\Laptrinhhuongdoituong\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\TheNN\Desktop\Laptrinhhuongdoituong\Laptrinhhuongdoituong\bin\Debug\EntityFramework.xml
+C:\Users\TheNN\Desktop\Laptrinhhuongdoituong\Laptrinhhuongdoituong\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\TheNN\Desktop\Laptrinhhuongdoituong\Laptrinhhuongdoituong\bin\Debug\System.Data.SQLite.xml
+C:\Users\TheNN\Desktop\Laptrinhhuongdoituong\Laptrinhhuongdoituong\obj\Debug\Laptrinhhuongdoituong.exe
+C:\Users\TheNN\Desktop\Laptrinhhuongdoituong\Laptrinhhuongdoituong\obj\Debug\Laptrinhhuongdoituong.pdb
+C:\Users\TheNN\Desktop\BaiTapLonHDT\BaiTapLonHDT\bin\Debug\Laptrinhhuongdoituong.exe.config
+C:\Users\TheNN\Desktop\BaiTapLonHDT\BaiTapLonHDT\obj\Debug\Laptrinhhuongdoituong.exe
+C:\Users\TheNN\Desktop\BaiTapLonHDT\BaiTapLonHDT\obj\Debug\Laptrinhhuongdoituong.pdb
+C:\Users\TheNN\Desktop\BaiTapLonHDT\BaiTapLonHDT\bin\Debug\Laptrinhhuongdoituong.exe
+C:\Users\TheNN\Desktop\BaiTapLonHDT\BaiTapLonHDT\bin\Debug\Laptrinhhuongdoituong.pdb
+C:\Users\TheNN\Desktop\BaiTapLonHDT\BaiTapLonHDT\bin\Debug\EntityFramework.dll
+C:\Users\TheNN\Desktop\BaiTapLonHDT\BaiTapLonHDT\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\TheNN\Desktop\BaiTapLonHDT\BaiTapLonHDT\bin\Debug\System.Data.SQLite.dll
+C:\Users\TheNN\Desktop\BaiTapLonHDT\BaiTapLonHDT\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\TheNN\Desktop\BaiTapLonHDT\BaiTapLonHDT\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\TheNN\Desktop\BaiTapLonHDT\BaiTapLonHDT\bin\Debug\EntityFramework.xml
+C:\Users\TheNN\Desktop\BaiTapLonHDT\BaiTapLonHDT\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\TheNN\Desktop\BaiTapLonHDT\BaiTapLonHDT\bin\Debug\System.Data.SQLite.xml
+C:\Users\TheNN\Desktop\BaiTapLonHDT\BaiTapLonHDT\obj\Debug\BaiTapLonHDT.csprojResolveAssemblyReference.cache
+C:\Users\TheNN\Desktop\BaiTapLonHDT - Copy\BaiTapLonHDT\bin\Debug\Laptrinhhuongdoituong.exe.config
+C:\Users\TheNN\Desktop\BaiTapLonHDT - Copy\BaiTapLonHDT\obj\Debug\Laptrinhhuongdoituong.exe
+C:\Users\TheNN\Desktop\BaiTapLonHDT - Copy\BaiTapLonHDT\obj\Debug\Laptrinhhuongdoituong.pdb
+C:\Users\TheNN\Desktop\BaiTapLonHDT - Copy\BaiTapLonHDT\bin\Debug\Laptrinhhuongdoituong.exe
+C:\Users\TheNN\Desktop\BaiTapLonHDT - Copy\BaiTapLonHDT\bin\Debug\Laptrinhhuongdoituong.pdb
+C:\Users\TheNN\Desktop\BaiTapLonHDT - Copy\BaiTapLonHDT\bin\Debug\EntityFramework.dll
+C:\Users\TheNN\Desktop\BaiTapLonHDT - Copy\BaiTapLonHDT\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\TheNN\Desktop\BaiTapLonHDT - Copy\BaiTapLonHDT\bin\Debug\System.Data.SQLite.dll
+C:\Users\TheNN\Desktop\BaiTapLonHDT - Copy\BaiTapLonHDT\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\TheNN\Desktop\BaiTapLonHDT - Copy\BaiTapLonHDT\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\TheNN\Desktop\BaiTapLonHDT - Copy\BaiTapLonHDT\bin\Debug\EntityFramework.xml
+C:\Users\TheNN\Desktop\BaiTapLonHDT - Copy\BaiTapLonHDT\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\TheNN\Desktop\BaiTapLonHDT - Copy\BaiTapLonHDT\bin\Debug\System.Data.SQLite.xml
+C:\Users\TheNN\Desktop\BaiTapLonHDT - Copy\BaiTapLonHDT\obj\Debug\BaiTapLonHDT.csprojResolveAssemblyReference.cache
+C:\Users\TheNN\Desktop\Hieu\hieu\obj\Debug\Laptrinhhuongdoituong.exe
+C:\Users\TheNN\Desktop\Hieu\hieu\obj\Debug\Laptrinhhuongdoituong.pdb
+C:\Users\TheNN\Desktop\Hieu\hieu\bin\Debug\Laptrinhhuongdoituong.exe.config
+C:\Users\TheNN\Desktop\Hieu\hieu\bin\Debug\Laptrinhhuongdoituong.exe
+C:\Users\TheNN\Desktop\Hieu\hieu\bin\Debug\Laptrinhhuongdoituong.pdb
+C:\Users\TheNN\Desktop\Hieu\hieu\bin\Debug\EntityFramework.dll
+C:\Users\TheNN\Desktop\Hieu\hieu\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\TheNN\Desktop\Hieu\hieu\bin\Debug\System.Data.SQLite.dll
+C:\Users\TheNN\Desktop\Hieu\hieu\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\TheNN\Desktop\Hieu\hieu\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\TheNN\Desktop\Hieu\hieu\bin\Debug\EntityFramework.xml
+C:\Users\TheNN\Desktop\Hieu\hieu\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\TheNN\Desktop\Hieu\hieu\bin\Debug\System.Data.SQLite.xml
+C:\Users\TheNN\Desktop\Hieu\hieu\obj\Debug\BaiTapLonHDT.csprojResolveAssemblyReference.cache
+F:\Hieu\hieu\bin\Debug\Laptrinhhuongdoituong.exe.config
+F:\Hieu\hieu\obj\Debug\Laptrinhhuongdoituong.exe
+F:\Hieu\hieu\obj\Debug\Laptrinhhuongdoituong.pdb
+F:\Hieu\hieu\bin\Debug\Laptrinhhuongdoituong.exe
+F:\Hieu\hieu\bin\Debug\Laptrinhhuongdoituong.pdb
+F:\Hieu\hieu\bin\Debug\EntityFramework.dll
+F:\Hieu\hieu\bin\Debug\EntityFramework.SqlServer.dll
+F:\Hieu\hieu\bin\Debug\System.Data.SQLite.dll
+F:\Hieu\hieu\bin\Debug\System.Data.SQLite.EF6.dll
+F:\Hieu\hieu\bin\Debug\System.Data.SQLite.Linq.dll
+F:\Hieu\hieu\bin\Debug\EntityFramework.xml
+F:\Hieu\hieu\bin\Debug\EntityFramework.SqlServer.xml
+F:\Hieu\hieu\bin\Debug\System.Data.SQLite.xml
+F:\Hieu\hieu\obj\Debug\BaiTapLonHDT.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Hieu\hieu\bin\Debug\Laptrinhhuongdoituong.exe.config
+C:\Users\Administrator\Desktop\Hieu\hieu\obj\Debug\Laptrinhhuongdoituong.exe
+C:\Users\Administrator\Desktop\Hieu\hieu\obj\Debug\Laptrinhhuongdoituong.pdb
+C:\Users\Administrator\Desktop\Hieu\hieu\bin\Debug\Laptrinhhuongdoituong.exe
+C:\Users\Administrator\Desktop\Hieu\hieu\bin\Debug\Laptrinhhuongdoituong.pdb
+C:\Users\Administrator\Desktop\Hieu\hieu\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Desktop\Hieu\hieu\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Desktop\Hieu\hieu\bin\Debug\System.Data.SQLite.dll
+C:\Users\Administrator\Desktop\Hieu\hieu\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Administrator\Desktop\Hieu\hieu\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Administrator\Desktop\Hieu\hieu\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\Desktop\Hieu\hieu\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Desktop\Hieu\hieu\bin\Debug\System.Data.SQLite.xml
+C:\Users\Administrator\Desktop\Hieu\hieu\obj\Debug\BaiTapLonHDT.csprojResolveAssemblyReference.cache
