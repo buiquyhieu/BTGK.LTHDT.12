@@ -83,6 +83,7 @@ and open the template in the editor.
         </script>
 
         <?php
+       
         ?>
     </body>
 </html>
