@@ -54,30 +54,42 @@ $dulieu= excel();
 //        );
         $N = count($dulieu);
 //        echo $N;
-        $cum = array(
-            1 => array(
-                'tamcum' => array()
-            ),
-            2 => array(
-                'tamcum' => array()
-            ),
-            3=>array(
-                'tamcum'=>array()
-            )
-        );
-        $cum[1]['tamcum'] = $dulieu[0];
-        $cum[2]['tamcum'] = $dulieu[1];
-        $cum[3]['tamcum']=$dulieu[2];
-        $temp = 1000;
+        $cum=array();
+        $soCum=4;
+        for($i=0;$i<$soCum;$i++){
+            $cum[$i+1]=array('tamcum'=>array());
+        }
+//        $cum = array(
+//            1 => array(
+//                'tamcum' => array()
+//            ),
+//            2 => array(
+//                'tamcum' => array()
+//            ),
+//            3=>array(
+//                'tamcum'=>array()
+//            ),
+//            4=>array(
+//                'tamcum'=>array()
+//            )
+//        );
+        for($i=1;$i<$soCum+1;$i++){
+            $cum[$i]['tamcum']=$dulieu[$i-1];
+        }
+//        $cum[1]['tamcum'] = $dulieu[0];
+//        $cum[2]['tamcum'] = $dulieu[1];
+//        $cum[3]['tamcum']=$dulieu[2];
+//        $cum[4]['tamcum']=$dulieu[3];
+        $temp = 10000;
         $t = 0;
         do {
 //    $t++;
-            for ($i = 1; $i < 4; $i++) {
+            for ($i = 1; $i < $soCum+1; $i++) {
                 $cum[$i]['tamcum']['nhom'] = 0;
             }
             for ($i = 0; $i < $N; $i++) {
                 $min = 1000;
-                for ($j = 1; $j < 4; $j++) {
+                for ($j = 1; $j < 5; $j++) {
                     $khoangcach = pow($dulieu[$i]['toan'] - $cum[$j]['tamcum']['toan'], 2) + pow($dulieu[$i]['van'] - $cum[$j]['tamcum']['van'], 2);
                     if ($khoangcach < $min) {
                         $min = $khoangcach;
@@ -96,7 +108,7 @@ $dulieu= excel();
 //        }
             $tongKC = 0;
 //        echo $cum[1][0]['toan'];
-            for ($i = 1; $i < 4; $i++) {
+            for ($i = 1; $i < $soCum+1; $i++) {
                 $m = count($cum[$i]) - 1;
                 for ($j = 0; $j < $m; $j++) {
 //               $kc=sqrt(pow($cum[$i]['tamcum']['toan']-$cum[$i][$j]['toan'], 2)+pow($cum[$i]['tamcum']['van']-$cum[$i][$j]['van'], 2));
@@ -114,7 +126,7 @@ $dulieu= excel();
             }
 //        echo '<pre>';
 //        print_r($cum);
-            for ($i = 1; $i < 4; $i++) {
+            for ($i = 1; $i < $soCum+1; $i++) {
                 $tongToan = 0;
                 $tongVan = 0;
                 $soluong = count($cum[$i]) - 1;
