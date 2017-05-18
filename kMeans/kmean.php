@@ -1,143 +1,111 @@
 <?php
-require_once 'docExcel.php';
-$dulieu= excel();
-//$dulieu = array(
-//            0 => array(
-//                'toan' => 5.5,
-//                'van' => 4.5,
-//                'nhom' => NULL
-//            ),
-//            1 => array(
-//                'toan' => 4,
-//                'van' => 4.25,
-//                'nhom' => NULL
-//            ),
-//            2 => array(
-//                'toan' => 4,
-//                'van' => 4.5,
-//                'nhom' => NULL
-//            ),
-//            3 => array(
-//                'toan' => 6,
-//                'van' => 5.75,
-//                'nhom' => NULL
-//            ),
-//            4 => array(
-//                'toan' => 6,
-//                'van' => 5.25,
-//                'nhom' => NULL
-//            ),
-//            5 => array(
-//                'toan' => 6,
-//                'van' => 5.25,
-//                'nhom' => NULL
-//            ),
-//            6 => array(
-//                'toan' => 4,
-//                'van' => 6,
-//                'nhom' => NULL
-//            ),
-//            7 => array(
-//                'toan' => 4.5,
-//                'van' => 4,
-//                'nhom' => NULL
-//            ),
-//            8 => array(
-//                'toan' => 3,
-//                'van' => 5.25,
-//                'nhom' => NULL),
-//            9 => array(
-//                'toan' => 2,
-//                'van' => 3.25,
-//                'nhom' => NULL
-//            )
-//        );
-        $N = count($dulieu);
-//        echo $N;
-        $cum=array();
-        $soCum=4;
-        for($i=0;$i<$soCum;$i++){
-            $cum[$i+1]=array('tamcum'=>array());
-        }
-//        $cum = array(
-//            1 => array(
-//                'tamcum' => array()
-//            ),
-//            2 => array(
-//                'tamcum' => array()
-//            ),
-//            3=>array(
-//                'tamcum'=>array()
-//            ),
-//            4=>array(
-//                'tamcum'=>array()
-//            )
-//        );
-        for($i=1;$i<$soCum+1;$i++){
-            $cum[$i]['tamcum']=$dulieu[$i-1];
-        }
-//        $cum[1]['tamcum'] = $dulieu[0];
-//        $cum[2]['tamcum'] = $dulieu[1];
-//        $cum[3]['tamcum']=$dulieu[2];
-//        $cum[4]['tamcum']=$dulieu[3];
-        $temp = 10000;
-        $t = 0;
-        do {
-//    $t++;
-            for ($i = 1; $i < $soCum+1; $i++) {
-                $cum[$i]['tamcum']['nhom'] = 0;
-            }
-            for ($i = 0; $i < $N; $i++) {
-                $min = 1000;
-                for ($j = 1; $j < 5; $j++) {
-                    $khoangcach = pow($dulieu[$i]['toan'] - $cum[$j]['tamcum']['toan'], 2) + pow($dulieu[$i]['van'] - $cum[$j]['tamcum']['van'], 2);
-                    if ($khoangcach < $min) {
-                        $min = $khoangcach;
-                        $dulieu[$i]['nhom'] = $j;
-                    }
-                }
-                $abc = $cum[$dulieu[$i]['nhom']]['tamcum']['nhom'];
-                $cum[$dulieu[$i]['nhom']]['tamcum']['nhom'] = $cum[$dulieu[$i]['nhom']]['tamcum']['nhom'] + 1;
 
-                $cum[$dulieu[$i]['nhom']][$abc] = $dulieu[$i];
+require_once 'docExcel.php';
+require_once 'connectDB.php';
+require_once 'update.php';
+$dulieu = DB();
+
+$N = count($dulieu);
+$cum = array();
+$soCum = 4;
+for ($i = 0; $i < $soCum; $i++) {
+    $cum[$i + 1] = array('tamcum' => array());
+}
+/*$tempCum = array();
+for ($i = 0; $i < $soCum; $i++) {
+    $tempCum[$i + 1] = array('tamcum' => array());
+}*/
+
+for ($i = 1; $i < $soCum + 1; $i++) {
+    $cum[$i]['tamcum'] = $dulieu[$i - 1];
+}
+/*for ($i = 1; $i < $soCum + 1; $i++) {
+    $tempCum[$i]['tamcum']['toan'] = $cum[$i]['tamcum']['toan'];
+    $tempCum[$i]['tamcum']['van'] = $cum[$i]['tamcum']['van'];
+    $tempCum[$i]['tamcum']['ok'] = 0;
+}
+        echo '<pre>';
+        print_r($tempCum);*/
+$temp = 10000;
+
+$eps = 0.000001;
+do {
+//    $t = 0;
+    for ($i = 1; $i < $soCum + 1; $i++) {
+        $cum[$i]['tamcum']['nhom'] = 0;
+    }
+    for ($i = 0; $i < $N; $i++) {
+        $min = 1000;
+        for ($j = 1; $j < $soCum + 1; $j++) {
+            $khoangcach = pow($dulieu[$i]['toan'] - $cum[$j]['tamcum']['toan'], 2) + pow($dulieu[$i]['van'] - $cum[$j]['tamcum']['van'], 2);
+            if ($khoangcach < $min) {
+                $min = $khoangcach;
+                $dulieu[$i]['nhom'] = $j;
             }
-//        if ($t==5) {
-//            echo '<pre>';
-//            print_r($cum);
-//            break;
-//        }
-            $tongKC = 0;
-//        echo $cum[1][0]['toan'];
-            for ($i = 1; $i < $soCum+1; $i++) {
-                $m = count($cum[$i]) - 1;
-                for ($j = 0; $j < $m; $j++) {
+        }
+        $abc = $cum[$dulieu[$i]['nhom']]['tamcum']['nhom'];
+        $cum[$dulieu[$i]['nhom']]['tamcum']['nhom'] = $cum[$dulieu[$i]['nhom']]['tamcum']['nhom'] + 1;
+
+        $cum[$dulieu[$i]['nhom']][$abc] = $dulieu[$i];
+    }
+
+    //So sánh tâm cụm
+    /*for ($i = 1; $i < $soCum + 1; $i++) {
+        $toan = abs($tempCum[$i]['tamcum']['toan'] - $cum[$i]['tamcum']['toan']);
+        $van = abs($tempCum[$i]['tamcum']['van'] - $cum[$i]['tamcum']['van']);
+        if (($toan <= $eps) && ($van <= $eps)) {
+            $tempCum[$i]['tamcum']['ok'] = 1;
+        }
+    }
+
+    for ($i = 1; $i < $soCum + 1; $i++) {
+        if ($tempCum[$i]['tamcum']['ok'] == 1) {
+            $t = $t + 1;
+        }
+    }
+    if ($t < 4) {
+        for ($i = 1; $i < $soCum + 1; $i++) {
+            $tempCum[$i]['tamcum']['toan'] = $cum[$i]['tamcum']['toan'];
+            $tempCum[$i]['tamcum']['van'] = $cum[$i]['tamcum']['van'];
+            $tempCum[$i]['tamcum']['ok'] = 0;
+        }
+    } else {
+        die(json_encode($cum));
+        break;
+    }*/
+    //khoảng cách đến tâm cụm
+    $tongKC = 0;
+    for ($i = 1; $i < $soCum + 1; $i++) {
+        $m = count($cum[$i]) - 1;
+        for ($j = 0; $j < $m; $j++) {
 //               $kc=sqrt(pow($cum[$i]['tamcum']['toan']-$cum[$i][$j]['toan'], 2)+pow($cum[$i]['tamcum']['van']-$cum[$i][$j]['van'], 2));
 //               echo $kc.'<br/>';
-                    $tongKC = $tongKC + sqrt(pow($cum[$i]['tamcum']['toan'] - $cum[$i][$j]['toan'], 2) + pow($cum[$i]['tamcum']['van'] - $cum[$i][$j]['van'], 2));
-                }
-            }
-//       echo $tongKC;
-            if (abs($tongKC - $temp) < 0.00001) {
-                die(json_encode($cum));
-        
-                break;
-            } else {
-                $temp = $tongKC;
-            }
-//        echo '<pre>';
-//        print_r($cum);
-            for ($i = 1; $i < $soCum+1; $i++) {
-                $tongToan = 0;
-                $tongVan = 0;
-                $soluong = count($cum[$i]) - 1;
-                for ($j = 0; $j < $soluong; $j++) {
-                    $tongToan = $tongToan + $cum[$i][$j]['toan'];
-                    $tongVan = $tongVan + $cum[$i][$j]['van'];
-                }
-                $cum[$i]['tamcum']['toan'] = $tongToan / $soluong;
-                $cum[$i]['tamcum']['van'] = $tongVan / $soluong;
-                for ($k = 0; $k < $soluong; $k++) {
-                    unset($cum[$i][$k]);
-                }
-            }
-        } while (true);
+            $tongKC = $tongKC + sqrt(pow($cum[$i]['tamcum']['toan'] - $cum[$i][$j]['toan'], 2) + pow($cum[$i]['tamcum']['van'] - $cum[$i][$j]['van'], 2));
+        }
+    }
+    if (abs($tongKC - $temp) < $eps) {
+//        for($i=0;$i<$N;$i++){
+//            upDate($dulieu[$i]['SOBAODANH'], $dulieu[$i]['nhom']);
+//        }
+        die(json_encode($cum));
+        break;
+    } else {
+        $temp = $tongKC;
+    }
+
+    //Tính lại tâm cụm
+    for ($i = 1; $i < $soCum + 1; $i++) {
+        $tongToan = 0;
+        $tongVan = 0;
+        $soluong = count($cum[$i]) - 1;
+        for ($j = 0; $j < $soluong; $j++) {
+            $tongToan = $tongToan + $cum[$i][$j]['toan'];
+            $tongVan = $tongVan + $cum[$i][$j]['van'];
+        }
+        $cum[$i]['tamcum']['toan'] = $tongToan / $soluong;
+        $cum[$i]['tamcum']['van'] = $tongVan / $soluong;
+        for ($k = 0; $k < $soluong; $k++) {
+            unset($cum[$i][$k]);
+        }
+    }
+} while (true);

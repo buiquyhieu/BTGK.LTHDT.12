@@ -14,6 +14,7 @@ and open the template in the editor.
                 position: absolute;
                 width: 10px;
                 height: 10px;
+                border-radius: 100%;
                 /*background-color: green;*/
             }
            
@@ -51,7 +52,7 @@ and open the template in the editor.
                                 div.style.left = mang[i]['tamcum'].van * 100 + "px";
                                 div.style.backgroundColor = "rgb(255,0,0)";
                                 div.style.color="rgb(255,0,0)";
-                                var node=document.createTextNode("Cụm"+parseInt(i+1)+" ("+Math.round(mang[i]['tamcum'].toan * 100)+","+Math.round(mang[i]['tamcum'].van * 100)+")");
+                                var node=document.createTextNode("Nhóm"+parseInt(i+1)+" ("+Math.round(mang[i]['tamcum'].toan * 100)+","+Math.round(mang[i]['tamcum'].van * 100)+")");
                                 div.appendChild(node);
                                 document.body.appendChild(div);
                         }
